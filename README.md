@@ -2,7 +2,7 @@
 
 This repository implements a machine learning pipeline to predict U.S. flight delays based on weather conditions, following the methodology of the paper *"Using Scalable Data Mining for Predicting Flight Delays"*.
 
-## 📊 Dataset Setup
+## Dataset Setup
 
 The dataset (approx. 5GB) is not included in this repository due to size limits. You can download and set up the data automatically using the following commands:
 
@@ -20,7 +20,7 @@ unzip Data/flights_data.zip -d Data/
 rm Data/flights_data.zip
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 1.  **Clone the repository**:
     ```bash
@@ -33,11 +33,3 @@ rm Data/flights_data.zip
     ```
 3.  **Run the analysis**:
     Open `main.ipynb` in Jupyter Notebook or VS Code to follow the research pipeline.
-
-## 📝 Roadmap
-
-- [x] Data import and project planning
-- [ ] Data preprocessing and cleaning
-- [ ] Feature engineering (12h weather window)
-- [ ] Random Forest model training
-- [ ] Performance evaluation
