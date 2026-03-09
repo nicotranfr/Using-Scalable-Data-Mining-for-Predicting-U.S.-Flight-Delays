@@ -33,3 +33,15 @@ rm Data/flights_data.zip
     ```
 3.  **Run the analysis**:
     Open `main.ipynb` in Jupyter Notebook or VS Code to follow the research pipeline.
+
+## PySpark cleaning before join (FT / OT)
+
+A ready-to-run PySpark script is available in `pyspark_ft_ot_cleaning.py` to:
+- build `FT` by removing cancelled/diverted flights and creating explicit columns (snake_case),
+- build `OT` by keeping only weather rows mapped to an airport through `WBAN -> AirportID`,
+- create Spark timestamps from `HHMM` fields with proper zero-padding.
+
+Run:
+```bash
+python pyspark_ft_ot_cleaning.py
+```
